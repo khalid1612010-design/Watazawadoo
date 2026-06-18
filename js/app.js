@@ -142,12 +142,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="course-body">
                     <h3>${title}</h3>
                     <p>${desc}</p>
-                    <div class="course-meta">
+                    <div class="course-meta" style="margin-bottom: 1.5rem;">
                         <div class="course-meta-item">⏱ ${duration}</div>
                         <div class="course-meta-item">📊 ${level}</div>
-                    </div>
-                    <div class="course-meta" style="border-top:none; padding-top:0; margin-top: -10px; margin-bottom: 1.5rem;">
-                        <div class="course-meta-item">👩‍🏫 ${instName}</div>
                     </div>
                     <div class="course-actions">
                         <a href="booking.html?course=${course.id}" class="btn btn-primary">
@@ -220,12 +217,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="course-body">
                         <h3>${title}</h3>
                         <p>${desc}</p>
-                        <div class="course-meta">
+                        <div class="course-meta" style="margin-bottom: 1.5rem;">
                             <div class="course-meta-item">⏱ ${duration}</div>
                             <div class="course-meta-item">📊 ${level}</div>
-                        </div>
-                        <div class="course-meta" style="border-top:none; padding-top:0; margin-top: -10px; margin-bottom: 1.5rem;">
-                            <div class="course-meta-item">👩‍🏫 ${instName}</div>
                         </div>
                         <div class="course-actions">
                             <a href="booking.html?course=${course.id}" class="btn btn-primary">
@@ -335,21 +329,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </h2>
                 <ul class="curriculum-list">
                     ${curriculumList}
-                </ul>
-
-                <h2 style="margin-top: 3rem;">
-                    <span class="ar">عن المعلمة</span>
-                    <span class="en">About the Instructor</span>
-                </h2>
-                <div style="display:flex; gap:1.5rem; flex-wrap:wrap; margin-top:1.5rem;">
-                    <img src="${instAvatar}" alt="${instName}" class="instructor-avatar" style="margin:0; width:100px; height:100px;">
-                    <div style="flex:1; min-width:200px;">
-                        <h3 style="margin-bottom:0.25rem;">${instName}</h3>
-                        <p style="color:var(--primary); font-weight:700; font-size:0.85rem; text-transform:uppercase; margin-bottom:0.75rem;">${instSpec}</p>
-                        <p style="font-size:0.95rem; line-height:1.6;">${instBio}</p>
-                    </div>
-                </div>
-            </div>
+                </ul>            </div>
 
             <div class="details-sidebar">
                 <h3 style="margin-bottom:1.5rem; text-align:center; border-bottom:1px solid var(--border); padding-bottom:1rem;">
@@ -365,10 +345,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <strong><span class="ar">المستوى</span><span class="en">Level</span></strong>
                     <span>${level}</span>
                 </div>
-                <div class="sidebar-info-item">
-                    <strong><span class="ar">المعلمة</span><span class="en">Instructor</span></strong>
-                    <span>${instName}</span>
-                </div>
+
                 <div class="sidebar-info-item">
                     <strong><span class="ar">طريقة الحضور</span><span class="en">Method</span></strong>
                     <span><span class="ar">أونلاين (تفاعلي)</span><span class="en">Online (Interactive)</span></span>
